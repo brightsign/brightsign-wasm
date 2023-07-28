@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+default-members=[ "brightsign-wasm" ]
+members=[ 
+	"brightsign-wasm",
+	"xtask",
+]
