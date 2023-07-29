@@ -23,5 +23,7 @@ run on brightsign devices. It provides a number of files:
 
 # Usage
 1.) Compile the project: cargo xtask dist
+
 2.) Assuming compilation succeeded the project files should be located in the dist/ directory.
+
 3.) Upload the files in dist/ to a brightsign device.
