@@ -11,7 +11,7 @@ doesn't appear to be working quite right ( for this project ).
 
 # brightsign-wasm
 brightsign-wasm is a simple rust project that acts as a template for further web assembly projects meant to be
-run on brightsign devices. It provides a number of file:
+run on brightsign devices. It provides a number of files:
 
 * lib.rs - An example wasm-bindgen project that creates a wasm entry/start point ( run on initialization ) and
   exports an adder function. This demonstrates how to use wasm-bindgen/web_sys to modify the dom and
