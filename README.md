@@ -21,3 +21,7 @@ run on brightsign devices. It provides a number of files:
 * static/autorun.brs - The file responsible for creating a webserver for the wasm file to be served
   from and for creating the html widget.
 
+# Usage
+1.) Compile the project: cargo xtask dist
+2.) Assuming compilation succeeded the project files should be located in the dist/ directory.
+3.) Upload the files in dist/ to a brightsign device.
