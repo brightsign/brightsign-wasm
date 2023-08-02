@@ -1,4 +1,5 @@
 use std::process::Command;
+use std::path::PathBuf;
 use xtask_wasm::{anyhow::Result, clap, default_dist_dir};
 
 #[derive(clap::Parser)]
@@ -31,7 +32,7 @@ fn main() -> Result<()> {
         }
         Opt::Start(mut dev_server) => {
             println!("Starting the dev server");
-            dev_server.arg("dist").start(default_dist_dir(true)).expect("Failed to start the dev server");
+            dev_server.arg("dist").start(PathBuf::from("./dist")).expect("Failed to start the dev server");
         }
     }
 
